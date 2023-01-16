@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-#import plotly.express as px
-import matplotlib.pyplot as plt
+
+
+
 
 
 
@@ -98,8 +98,3 @@ st.write('---')
    
 
 
-# fig = px.histogram(df2, x='experience_level',y='salary',color='experience_level',histfunc="avg",text_auto=True, title='Moyenne d').update_xaxes(categoryorder='total descending')
-# st.plotly_chart(fig, theme="streamlit", use_container_width=True)
-
-# fig = px.histogram(df2, x='experience_level',y='salary',color='company_size',histfunc="avg",text_auto=True, title='Moyenne d').update_xaxes(categoryorder='total descending')
-# st.plotly_chart(fig, theme="streamlit", use_container_width=True)
