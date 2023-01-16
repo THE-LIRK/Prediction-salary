@@ -4,9 +4,13 @@ import pandas as pd
 
 
 
+st.title('Salary prediction in the data professions')
+st.markdown("""
+this application Predicts salaries in data professions
+* Python libraries:  pandas, streamlit
+* Data source: https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries .
+""")
 
-
-st.write("Prédiction de salaire")
 st.sidebar.header('Rentrez vos informartions')
 
 
@@ -28,7 +32,9 @@ df1["employment_type"]=df1["employment_type"].str.replace("FL", "Freelance")
 
 df2=df1
 
+st.header('Data')
 
+st.dataframe(df1)
 
 # Loads the salary Dataset
 
@@ -64,7 +70,7 @@ dt=pd.concat([df,train],axis=0)
 # Main Panel
 
 # Print specified input parameters
-st.header('Vos informations')
+st.header('Your Informations')
 st.write(df)
 st.write('---')
 
